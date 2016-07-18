@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The moe´s bar</title><br><br>
+	<h4>Welcome to the moe´s bar</h4><br>
+	<h3>Do you wanna get in to the moe´s bar?</h3><br>
+	<h2>please, enter your age in the box</h2><br>
+	<input type="text" placeholder="writes your age here" id="Age"><br><br>
+	<input type="button" value="Press me" onclick="Mybarr();">
+</head>
+<body>
+	<script type="text/javascript">
+		function Mybarr()
+		{
+			var Age=parseInt(document.getElementById('Age').value);
+			console.log(Age);
+			if(Age >= 21)
+			{
+				alert("Congratulations, you can follow to the moe´s bar!");
+			}
+			else{
+				alert("Sorry, you can not follow to the moe´s bar!");
+			}
+		}
+	</script>
+</body>
+</html>
